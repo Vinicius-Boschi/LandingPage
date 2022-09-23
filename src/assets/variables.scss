@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+$gray: #333333;
+$gray-two: #828282;;
+$blue: #2D9CDB;
+$darkBlue: #100E1D;
+$light-gray: #F2F2F2;
+$green: #27AE60;
+$red: #EB5757;
+$font: 'Poppins', sans-serif;
+$font-two: 'Heebo', sans-serif;
+
+@mixin for-phone-only {
+    @media (min-width: 375px) and (max-width: 540px) { @content; }
+}
+
+@mixin for-tablet-only {
+    @media (min-width: 541px) and (max-width: 999px) { @content; }
+}
